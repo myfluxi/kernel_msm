@@ -991,6 +991,7 @@ static void ngd_laddr_lookup(struct work_struct *work)
 	struct slim_device *sbdev;
 	struct list_head *pos, *next;
 	int i;
+	slim_framer_booted(ctrl);
 	mutex_lock(&ctrl->m_ctrl);
 	list_for_each_safe(pos, next, &ctrl->devs) {
 		int ret = 0;
