@@ -1311,3 +1311,6 @@ enum rq_nohz_flag_bits {
 
 #define nohz_flags(cpu)	(&cpu_rq(cpu)->nohz_flags)
 #endif
+
+#define NOHZ_KICK_ANY 0
+#define NOHZ_KICK_RESTRICT 1
